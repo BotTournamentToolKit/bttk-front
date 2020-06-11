@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
+      - run: npm install eslint
       - name: ESLint Src
         run: eslint "src/**"
       - name: ESLint Public
